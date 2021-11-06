@@ -1,6 +1,6 @@
 # Capstone Project
 
-All content on this page were authored by Alec Ngai, Esther Utomakili, Jerry McGranaghan, Wisam Ramadan and Olesya Irkhina.
+All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), Jerry McGranaghan, Wisam Ramadan and Olesya Irkhina.
 
 ## Table of Contents
 - [Overview of Project](#overview-of-project)
