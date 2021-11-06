@@ -1,6 +1,6 @@
 # Capstone Project
 
-All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), Jerry McGranaghan, Wisam Ramadan and Olesya Irkhina.
+All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and Olesya Irkhina.
 
 ## Table of Contents
 - [Overview of Project](#overview-of-project)
@@ -17,7 +17,7 @@ All content on this page were authored by [Alec Ngai](https://github.com/alecnga
 
 ### Project Topic
 
-The chosen topic for this project is "Understanding and Predicting Labour Demands in Various Canadation Sectors".
+The chosen topic for this project is "Understanding and Predicting Labour Vacancies in Various Canadian Sectors".
 
 This topic was selected to understand how the labour market will look like post-COVID. Understanding the labour market and looking at potential vacancies could go a long way in avoiding situations such as economic collapse and could also potentially assist with education planning.
 
@@ -43,22 +43,20 @@ Prior to diving into the machine learning, the data was cleaned and explored to 
 
 During the exploration, the team found the data from years 2020 and 2021 was incomplete and decided it was best to drop the little information provided for both years. 
 
-Features kept from the original data include the Reference date, NOC, Job vacancy characteristics, Statistics, UOM, Sclaer Factor, Vale and Status.
+Features kept from the original data include the Reference date, NOC, Job vacancy characteristics, Statistics, UOM, Scaler Factor, Vale and Status.
 
 ### Machine Learning
 
 Subsequent to deciding on a topic, the team decided that a supervised learning model would be best to achieve the goals of the project. 
 
-The team was left with chosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
+The team was left with choosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
 
 ### Database
 
-**_Databae ERD_**
+**_Database ERD_**
 ![ERD_DB](https://user-images.githubusercontent.com/86085601/140614511-1427f635-9ce5-45d7-8238-4f3b1daa528c.jpg)
 
 ### Dashboard
 
 ## Summary and Conclusion
-
-
 
