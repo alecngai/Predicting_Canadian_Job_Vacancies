@@ -29,11 +29,11 @@ The original data set contains standardized column information, however, for the
 
 ### Project Goals
 
-The goal of this project is to make use of machine learning to predict and determine the amount of job vacancies in upcoming quarters based on previous trends.
+The goal of this project is to make use of machine learning to predict and determine the amount of job vacancies in current quarter based on previous trends.
 
 ## Communication Protocols
 
-The team made use of Slack, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday
+The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday
 
 ## Results
 
@@ -43,13 +43,25 @@ Prior to diving into the machine learning, the data was cleaned and explored to 
 
 During the exploration, the team found the data from years 2020 and 2021 was incomplete and decided it was best to drop the little information provided for both years. 
 
-Features kept from the original data include the Reference date, NOC, Job vacancy characteristics, Statistics, UOM, Scaler Factor, Vale and Status.
+Features kept from the original data include the Reference date, NOC, Job vacancy characteristics, Statistics, UOM, Scaler Factor, Value and Status.
 
 ### Machine Learning
 
 Subsequent to deciding on a topic, the team decided that a supervised learning model would be best to achieve the goals of the project. 
 
 The team was left with choosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
+
+The team evaluated what features can be most relevant to the project’s problem and proposed to have the following features as input:
+•	Reference Date: quarterly periods when job vacancies existed 
+•	National Occupancy Classification: The national classification of jobs (NOC)
+•	Job Characteristics: different Job characteristics and requirements (full time vs part time, education level required)
+•	Previous Job Vacancies: total number of vacancies available at a certain period.
+The output feature will be:
+Current Job vacancies: current total number of vacancies available 
+
+The following diagram shows the machine learning mock up decision process:
+
+
 
 ### Database
 
