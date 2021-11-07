@@ -52,12 +52,15 @@ Subsequent to deciding on a topic, the team decided that a supervised learning m
 The team was left with choosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
 
 The team evaluated what features can be most relevant to the project’s problem and proposed to have the following features as input:
-•	Reference Date: quarterly periods when job vacancies existed 
-•	National Occupancy Classification: The national classification of jobs (NOC)
-•	Job Characteristics: different Job characteristics and requirements (full time vs part time, education level required)
-•	Previous Job Vacancies: total number of vacancies available at a certain period.
+
+*	Reference Date: quarterly periods when job vacancies existed 
+* National Occupancy Classification: The national classification of jobs (NOC)
+* Job Characteristics: different Job characteristics and requirements (full time vs part time, education level required)
+* Previous Job Vacancies: total number of vacancies available at a certain period.
+
 The output feature will be:
-Current Job vacancies: current total number of vacancies available 
+
+* Current Job vacancies: current total number of vacancies available 
 
 The following diagram shows the machine learning mock up decision process:
 
