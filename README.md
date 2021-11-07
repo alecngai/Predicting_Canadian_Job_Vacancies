@@ -89,7 +89,7 @@ The following diagram shows the machine learning mock up decision process:
 
 **_Machine Learning Overview_**
 
-![ML_OV](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/Machine_Learning_Flow_Chart.png)
+![ML_OV](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Resources/Machine_Learning_Flow_Chartv3.png)
 
 ### Database
  
