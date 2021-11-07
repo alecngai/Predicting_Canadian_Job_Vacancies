@@ -51,16 +51,34 @@ Subsequent to deciding on a topic, the team decided that a supervised learning m
 
 The team was left with choosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
 
+Data Transformation:
+* Several columns will need transformation, text extraction and encoding to be usable in the machine learning model i.e. NOC, Job Characteristics, all types, full time and parttime will all be encoded to be used in our machine learning model. 
+* Unnecessary columns will be dropped to preserve space and simplicity, these columns will be: DGUID, UOM/UOMID since we are focusing on Job vacancies it is assumed to be a Number value, SCALAR_FACTOR, SCALAR_ID, VECTOR, COORDINATE, STATUS, SYMBOL, TERMINATED, DECIMALS.  
+
+
 The team evaluated what features can be most relevant to the project’s problem and proposed to have the following features as input:
 
-*	Reference Date: quarterly periods when job vacancies existed 
-* National Occupancy Classification: The national classification of jobs (NOC)
-* Job Characteristics: different Job characteristics and requirements (full time vs part time, education level required)
-* Previous Job Vacancies: total number of vacancies available at a certain period.
+*	Reference Date: quarterly periods, in format of string which we will convert to int for analysis. 
+*	National Occupancy Classification: The national classification of jobs (NOC), this is also a string and will be encoded using one hot encoding method
+* Job Characteristics: different Job characteristics and requirements (full time vs part time, education level required) this is also a string and will be encoded using one hot encoding method
+* Previous Job Vacancies: total number of vacancies available in correlations to reference data, stored as an integer. 
 
 The output feature will be:
 
 * Current Job vacancies: current total number of vacancies available 
+
+Description of how data was split into training and testing sets
+
+The data will be split into training and testing randomly with stratification. However, there will be specific requirements for the split data, if the feature is built for a specific date it must consist of previous data i.e feature built for Jan 2016 must consist of Oct 2015 data. 
+
+Explanation of model choice plan
+
+The project problem and desired output calls for a supervised machine learning model. The team will evaluate regression models using sample data and decide on the best model that fits the project’s purpose. This is because we are treating the data as continuous, using this method we will predict the trend of job vacancies in Canada in different National Occupational Classifications. 
+
+Technology 
+
+The current dataset we utilize for our machine learning model has been cleaned once and currently stored on google drive at 500mb. We will use Google Collab to run our machine learning module. 
+
 
 The following diagram shows the machine learning mock up decision process:
 
