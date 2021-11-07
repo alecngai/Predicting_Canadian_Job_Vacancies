@@ -88,6 +88,9 @@ The following diagram shows the machine learning mock up decision process:
 
 ### Database
  
+To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
+Also the Entity Relationship Diagram (ERD) with relationships was created as below.
+
 **_Database ERD_**
 
 ![ERD_DB](https://user-images.githubusercontent.com/86085601/140614511-1427f635-9ce5-45d7-8238-4f3b1daa528c.jpg)
