@@ -2,6 +2,8 @@
 
 All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and [Olesya Irkhina](https://github.com/itekkie).
 
+## Table of Contents
+
 - [Overview of Project](#overview-of-project)
   * [Project Topic](#project-topic)
   * [Data Source](#data-source)
