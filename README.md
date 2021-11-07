@@ -1,4 +1,3 @@
-# Data_Capstone_2021  (Group 3)
 # Capstone Project
 
 All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and [Olesya Irkhina](https://github.com/itekkie).
@@ -60,4 +59,3 @@ The team was left with choosing between a time series model or a regression mode
 ### Dashboard
 
 ## Summary and Conclusion
-
