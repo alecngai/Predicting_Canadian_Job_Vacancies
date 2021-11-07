@@ -64,7 +64,7 @@ The output feature will be:
 
 The following diagram shows the machine learning mock up decision process:
 
-
+![ML_OV](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/Machine_Learning_Flow_Chart.png)
 
 ### Database
 
