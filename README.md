@@ -51,7 +51,7 @@ Subsequent to deciding on a topic, the team decided that a supervised learning m
 
 The team was left with choosing between a time series model or a regression model and came to the conclusion the latter model was chosen because a time series model would require more information that was found. The time series model will require the team to consider data from 2020 and 2021 which could potentially skew the output data.
 
-Data Transformation:
+#### Data Transformation:
 * Several columns will need transformation, text extraction and encoding to be usable in the machine learning model i.e. NOC, Job Characteristics, all types, full time and parttime will all be encoded to be used in our machine learning model. 
 * Unnecessary columns will be dropped to preserve space and simplicity, these columns will be: DGUID, UOM/UOMID since we are focusing on Job vacancies it is assumed to be a Number value, SCALAR_FACTOR, SCALAR_ID, VECTOR, COORDINATE, STATUS, SYMBOL, TERMINATED, DECIMALS.  
 
@@ -67,29 +67,39 @@ The output feature will be:
 
 * Current Job vacancies: current total number of vacancies available 
 
-Description of how data was split into training and testing sets
+#### Description of how data was split into training and testing sets
 
 The data will be split into training and testing randomly with stratification. However, there will be specific requirements for the split data, if the feature is built for a specific date it must consist of previous data i.e feature built for Jan 2016 must consist of Oct 2015 data. 
 
-Explanation of model choice plan
+#### Explanation of model choice plan
 
 The project problem and desired output calls for a supervised machine learning model. The team will evaluate regression models using sample data and decide on the best model that fits the project’s purpose. This is because we are treating the data as continuous, using this method we will predict the trend of job vacancies in Canada in different National Occupational Classifications. 
 
-Technology 
+#### Technology 
 
 The current dataset we utilize for our machine learning model has been cleaned once and currently stored on google drive at 500mb. We will use Google Collab to run our machine learning module. 
 
 
 The following diagram shows the machine learning mock up decision process:
 
+**_Machine Learning Overview_**
+
 ![ML_OV](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/Machine_Learning_Flow_Chart.png)
 
 ### Database
-
+ 
 **_Database ERD_**
+
 ![ERD_DB](https://user-images.githubusercontent.com/86085601/140614511-1427f635-9ce5-45d7-8238-4f3b1daa528c.jpg)
 
 ### Dashboard
+
+The team decided on making use of Tableau as a visualization tool. The goal is to make use of Tableau's dashboard function to create heatmaps that would perfectly show information such as vacancies by province, vancancies by industry and other machine learning outputs. An example dashboard is provided below.
+
+**_Dashboard Mockup_**
+
+![Capstone_Dashboard_v1](https://user-images.githubusercontent.com/86085601/140632658-7f032709-a3c6-4db3-8fbc-460220f0230c.png)
+
 
 ## Summary and Conclusion
 
