@@ -94,6 +94,9 @@ The following diagram shows the machine learning mock up decision process:
 ![ML_OV](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Resources/Machine_Learning_Flow_Chartv3.png)
 
 ### Database
+
+To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
+Also the Entity Relationship Diagram (ERD) with relationships was created as below.
  
 **_Database ERD_**
 
