@@ -1,17 +1,24 @@
 # Capstone Project
 
-All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and Olesya Irkhina.
+All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and [Olesya Irkhina](https://github.com/itekkie).
 
 ## Table of Contents
+
 - [Overview of Project](#overview-of-project)
   * [Project Topic](#project-topic)
   * [Data Source](#data-source)
   * [Project Goals](#project-goals)
 - [Communication Protocols](#communication-protocols)
 - [Results](#results)
+  * [Data Exploration and Cleaning](#data-exploration-and-cleaning)
   * [Machine Learning](#machine-learning)
+    + [Data Transformation:](#data-transformation-)
+    + [Description of how data was split into training and testing sets](#description-of-how-data-was-split-into-training-and-testing-sets)
+    + [Explanation of model choice plan](#explanation-of-model-choice-plan)
+    + [Technology](#technology)
   * [Database](#database)
   * [Dashboard](#dashboard)
+- [Summary and Conclusion](#summary-and-conclusion)
 
 ## Overview of Project
 
@@ -84,9 +91,12 @@ The following diagram shows the machine learning mock up decision process:
 
 **_Machine Learning Overview_**
 
-![ML_OV](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/Machine_Learning_Flow_Chart.png)
+![ML_OV](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Resources/Machine_Learning_Flow_Chartv3.png)
 
 ### Database
+
+To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
+Also the Entity Relationship Diagram (ERD) with relationships was created as below.
  
 To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
 Also the Entity Relationship Diagram (ERD) with relationships was created as below.
@@ -97,7 +107,7 @@ Also the Entity Relationship Diagram (ERD) with relationships was created as bel
 
 ### Dashboard
 
-The team decided on making use of Tableau as a visualization tool. The goal is to make use of Tableau's dashboard function to create heatmaps that would perfectly show information such as vacancies by province, vancancies by industry and other machine learning outputs. An example dashboard is provided below.
+The team decided on making use of Tableau as a visualization tool. The goal is to make use of Tableau's dashboard feature to create heatmaps that would perfectly show information such as vacancies by province, vacancies by industry and other machine learning outputs. An example dashboard is provided below.
 
 **_Dashboard Mockup_**
 
