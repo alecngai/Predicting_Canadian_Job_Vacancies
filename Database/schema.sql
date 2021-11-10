@@ -1,56 +1,42 @@
-CREATE SCHEMA public;
-
 CREATE TABLE NOC(
-	NOCcode VARCHAR NOT NULL,
-	NOCDesc VARCHAR NOT NULL,
-	PRIMARY KEY (NOCcode)
+	ID int not null,
+	noc_code VARCHAR NOT NULL,
+	noc_desc VARCHAR NOT NULL,
+	PRIMARY KEY (noc_code)
 );
 
-CREATE TABLE AverageWage(
-	WageID INT NOT NULL,
-	RefDate DATE NOT NULL,
+CREATE TABLE AverageWage( 
+	Wage_ID INT NOT NULL,
+	Year varchar not null,
+	Quarter varchar not null,
 	Location VARCHAR NOT NULL,
-	NOCcode VARCHAR NOT NULL,
-	JobDetails VARCHAR NOT NULL,
-	AvgWage VARCHAR NOT NULL,
-	PRIMARY KEY (WageID),
-	FOREIGN KEY (NOCcode) REFERENCES NOC (NOCcode)
+	noc_code VARCHAR not null,
+	Job_Details VARCHAR NOT NULL,
+	Avg_Wage float NOT NULL,
+	PRIMARY KEY (Wage_ID),
+	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
 );
 
-CREATE TABLE Vacancies (
-	VacancyID INT NOT NULL,
-	RefDate DATE NOT NULL,
+CREATE TABLE Vacancies ( 
+	Vacancy_ID INT NOT NULL,
+	Year varchar not null,
+	Quarter varchar not null,
 	Location VARCHAR NOT NULL,
-	NOCcode VARCHAR NOT NULL,
-	JobDetails VARCHAR NOT NULL,
-	NoOfVacancies INT NOT NULL,
-	PRIMARY KEY (VacancyID),
-	FOREIGN KEY (NOCcode) REFERENCES NOC (NOCcode)
+	noc_code VARCHAR NOT NULL,
+	Job_Details VARCHAR NOT NULL,
+	Total_Vacancies float NOT NULL,
+	PRIMARY KEY (Vacancy_ID),
+	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
 );
 
-CREATE TABLE VacancyRequirements(
-	RequirementID INT NOT NULL,
-	RefDate DATE NOT NULL,
+CREATE TABLE JobDetails_Percent(
+	Job_ID INT NOT NULL,
+	Year varchar not null,
+	Quarter varchar not null,
 	Location VARCHAR NOT NULL,
-	NOCcode VARCHAR NOT NULL,
-	JobDetails VARCHAR NOT NULL,
-	TotalPercent INT NOT NULL,
-	PRIMARY KEY (RequirementID),
-	FOREIGN KEY (NOCcode) REFERENCES NOC (NOCcode)
-);
-
-CREATE TABLE AvgNOCWage(
-	NOCcode VARCHAR NOT NULL,
-	RefDate DATE NOT NULL,
-	AvgWage FLOAT NOT NULL,
-	FOREIGN KEY (NOCcode) REFERENCES NOC (NOCcode),
-	PRIMARY KEY (NOCcode)
-);
-
-CREATE TABLE TotalNOCVacancies(
-	NOCcode VARCHAR NOT NULL,
-	RefDate DATE NOT NULL,
-	TotalVacancies INT NOT NULL,
-	FOREIGN KEY (NOCcode) REFERENCES NOC (NOCcode),
-	PRIMARY KEY (NOCcode)
+	noc_code VARCHAR NOT NULL,
+	Job_Details VARCHAR NOT NULL,
+	Total_Percent float NOT NULL,
+	PRIMARY KEY (Job_ID),
+	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
 );
