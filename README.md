@@ -40,7 +40,7 @@ The goal of this project is to make use of machine learning to predict and deter
 
 ## Communication Protocols
 
-The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday
+The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday. It can be found here [Meeting Minutes](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Google_Drive_Clone_2021_11_06/Meeting%20Minutes).
 
 ## Results
 
@@ -94,7 +94,18 @@ The following diagram shows the machine learning mock up decision process:
 ![ML_OV](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Resources/Machine_Learning_Flow_Chartv3.png)
 
 ### Database
+
+To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
+
+The team decided to use the next integration of provisional database as below:
+
+![image](https://user-images.githubusercontent.com/68247343/140799815-55737326-ba8f-4800-8db7-209ab3c1fe49.png)
+
+Also the Entity Relationship Diagram (ERD) with relationships was created as below.
  
+To create “Predicting Labour Vacancies in Various Canadian Sectors” the team imported the raw data into SQL by using PostgreSQL and created the database engine that allows Pandas to communicate with SQL. 
+Also the Entity Relationship Diagram (ERD) with relationships was created as below.
+
 **_Database ERD_**
 
 ![ERD_DB](https://user-images.githubusercontent.com/86085601/140614511-1427f635-9ce5-45d7-8238-4f3b1daa528c.jpg)
