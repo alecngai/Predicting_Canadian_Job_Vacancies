@@ -1,18 +1,17 @@
 CREATE TABLE NOC(
-	ID int not null,
-	noc_code VARCHAR NOT NULL,
+	noc_code varchar NOT NULL,
 	noc_desc VARCHAR NOT NULL,
 	PRIMARY KEY (noc_code)
 );
 
 CREATE TABLE AverageWage( 
 	Wage_ID INT NOT NULL,
-	REF_DATE varchar not null,
-	Year varchar not null,
-	Quarter varchar not null,
+	REF_DATE date not null,
+	Year int not null,
+	Quarter int not null,
 	Location VARCHAR NOT NULL,
-	noc_code VARCHAR not null,
-	Job_Details VARCHAR NOT NULL,
+	noc_code varchar not null,
+	JOB_CHAR VARCHAR NOT NULL,
 	Avg_Wage float NOT NULL,
 	PRIMARY KEY (Wage_ID),
 	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
@@ -20,56 +19,33 @@ CREATE TABLE AverageWage(
 
 CREATE TABLE Vacancies ( 
 	Vacancy_ID INT NOT NULL,
-	REF_DATE varchar not null,
-	Year varchar not null,
-	Quarter varchar not null,
+	REF_DATE date not null,
+	Year int not null,
+	Quarter int not null,
 	Location VARCHAR NOT NULL,
-	noc_code VARCHAR NOT NULL,
+	noc_code varchar NOT NULL,
 	Job_Details VARCHAR NOT NULL,
 	Total_Vacancies float NOT NULL,
 	PRIMARY KEY (Vacancy_ID),
 	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
 );
 
-CREATE TABLE TimeSeries ( 
+CREATE TABLE MachineLearning ( 
 	ID INT NOT NULL,
-	REF_DATE varchar not null,
-	Year varchar not null,
-	Quarter varchar not null,
-	Location VARCHAR NOT NULL,
-	Job_Details VARCHAR NOT NULL,
-	Statistics varchar not null,
-	noc_code VARCHAR,
+	REF_DATE date not null,
+	GEO VARCHAR NOT NULL,
+	noc_code VARCHAR not null,
 	noc_desc VARCHAR NOT NULL,
-	Total_Vacancies VARCHAR NOT NULL,
+	JOB_CHAR VARCHAR NOT NULL,
+	Total_Vacancies float NOT NULL,
+	Predicted_Vacancies float,
 	PRIMARY KEY (ID),
 	FOREIGN KEY (noc_code) REFERENCES NOC (noc_code)
 );
 
-CREATE TABLE Quarterly_Vacancies ( 
-	REF_DATE varchar not null,
-	Total_Vacancies VARCHAR NOT NULL,
+CREATE TABLE Canada_Vacancies ( 
+	REF_DATE date not null,
+	Total_Vacancies float NOT NULL,
+	Predicted_Vacancies int,
 	PRIMARY KEY (REF_DATE)
-);
-
-CREATE TABLE LINEAR_ML ( 
-	ID INT NOT NULL,
-	REF_DATE varchar not null,
-	GEO varchar not null,
-	DGUID varchar not null,
-	NOC VARCHAR NOT NULL,
-	Characteristics VARCHAR NOT NULL,
-	Stats VARCHAR NOT NULL,
-	UOM VARCHAR NOT NULL,
-	UOM_ID INT NOT NULL,
-	SCALAR_FACTOR VARCHAR NOT NULL,
-	SCALAR_ID VARCHAR NOT NULL,
-	VECTOR VARCHAR NOT NULL,
-	COORDINATE VARCHAR NOT NULL,
-	VALUE FLOAT NOT NULL,
-	STATUS VARCHAR NOT NULL,
-	SYMBOL VARCHAR,
-	TERMINATED VARCHAR,
-	DECIMALS VARCHAR,
-	PRIMARY KEY (ID)
 );
