@@ -16,7 +16,7 @@ this will allow the ML model to see the trend in quarters within the year more a
 
 - Creation of previous quarter vacancy (PREVIOUS_VACANCY (Int))
 
-!(prevVacancies)[https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Prev_Vacancies.png]
+![prevVacancies](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Prev_Vacancies.png)
 
 This is an important column for the MLP Regressor model so it can more accurately predict the next quarters vacancy amount. 
 
