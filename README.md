@@ -58,7 +58,10 @@ The result of checking the columns and their corresponding data types is shown a
 ![image](https://user-images.githubusercontent.com/68247343/142787548-bf801ff9-2358-4895-ad59-8afca9e6bfda.png)
 d)	Job_characteristics contains set of job analytics together. So, we decided to analyse only type of work: Full-time and Part-time.
 e)	NOC contains all element of their hierarchy. So, we chose to analyse only high NOC’s level as Broad occupational category.
+
 5.	Lastly, we find out 2-10% of difference of missing data by quarters comparing blocks of selected data such as total vacancies for Canada, all occupation, all type of job with filtering by Provinces, only Broad NOC, Full/part-time type of job.
+![image](https://user-images.githubusercontent.com/68247343/142787752-b94a2510-afe4-441a-8e22-8d91d8d3bc9b.png)
+
 
 ## Results
 
