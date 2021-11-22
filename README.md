@@ -48,10 +48,6 @@ The team made use of a dedicated Slack channel, Zoom and various Google apps to 
 
 Please refer to the dedicated ReadME explaining the data exploration process.
 
-## Results
-
-Prior to diving into the machine learning, the data was cleaned and explored to identify what may be the optimal machine learning model to implement.
-
 ### Machine Learning
 
 Please refer to the dedicated ReadME explaining the machine learning models used for analyzing and predicting future vacancies.
