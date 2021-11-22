@@ -22,28 +22,30 @@ The result of checking the columns and their corresponding data types is shown a
   2. We drop redundant columns of the dataset as followings: DGUID, UOM_ID, SCALAR_FACTOR, SCALAR_ID, VECTOR, COORDINATE, STATUS, SYMBOL, UOM, TERMINATED, DECIMALS.
   3. Next, we check that there isn’t any duplicate rows and null values.
 
-#### Exploring Statistics column: Job Vacancies.
+#### - Exploring Statistics column: Job Vacancies.
   1. The plotting different columns shows results as followings:
 ![image](https://user-images.githubusercontent.com/68247343/142800323-557949da-9a65-4fef-a479-cc98e2e726c5.png) 
 
 ![image](https://user-images.githubusercontent.com/68247343/142800340-5edf238f-6f9f-4150-ac83-da64da94389f.png)
 
   2. Detecting Outliers shows results as shown in the screenshot below.
-  screen
+![image](https://user-images.githubusercontent.com/68247343/142933507-3eb5e63f-5c7c-4012-ae99-96232cc52e31.png)
 
   3. Also, we find out 2-10% of the difference of missing data by quarters comparing blocks of selected data such as total vacancies for Canada / all occupation/ all type of job with filtering by Provinces/ only Broad NOC / Full-time, Part-time type of job.
 
 ![image](https://user-images.githubusercontent.com/68247343/142800355-7a7d76e7-66c0-426d-b29c-aa0513cf833a.png)
 
-#### Exploring Statistics column: Average Hourly Wage.
+#### - Exploring Statistics column: Average Hourly Wage.
 
-1.	For Average Hourly Wage data set we have the same problem as aggregated data and non-aggregated data in the same column for GEO / NOC / Job characteristic columns. So, we decided to select only non-aggregated data for visualization.
-2.	Plotting average wage to find out seasonality and data pattern.
-screen
-3.	Detecting Outliers shows results as shown in the screenshot below
+  1.	For Average Hourly Wage data set we have the same problem as aggregated data and non-aggregated data in the same column for GEO / NOC / Job characteristic columns. So, we decided to select only non-aggregated data for visualization.
+  2.	Plotting average wage to find out seasonality and data pattern.
+![image](https://user-images.githubusercontent.com/68247343/142933592-86ccda7b-af19-4304-a32b-7c244149e351.png)
+
+  3.	Detecting Outliers shows results as shown in the screenshot below
+![image](https://user-images.githubusercontent.com/68247343/142933606-9d0508e1-1aa6-408a-b5e0-75657c69b710.png)
 
 #### Exploring Statistics column: Percent Job Vacancies.
 
 Percent Job Vacancies is a data set which contains proportional data for each GEO / NOC / Job vacancy characteristics elements. So, we decided to ignore this dataset for the project.
 
-screen
+![image](https://user-images.githubusercontent.com/68247343/142933652-23639eda-d26d-4917-bbfa-ef49988afb6f.png)
