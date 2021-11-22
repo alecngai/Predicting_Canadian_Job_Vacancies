@@ -2,6 +2,8 @@
 
 All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and [Olesya Irkhina](https://github.com/itekkie).
 
+To view the overview of the project, please refer to the [Google Slides](https://docs.google.com/presentation/d/13DwRuTAOs9LMtDzRW2bk1DPOZpiPyLyL5yLpyy_frok/edit?usp=sharing) documents authored by the team.
+
 ## Table of Contents
 
 - [Overview of Project](#overview-of-project)
