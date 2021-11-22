@@ -10,19 +10,18 @@ To explore the dataset, we import necessary python libraries such as Pandas, Mat
 
 ### Step 2. Assess data uniqueness and completeness
 The result of checking the columns and their corresponding data types is shown as following:
-
-screen
+![image](https://user-images.githubusercontent.com/68247343/142800299-91ba7013-37f3-46b3-b88b-3e5265653123.png)
 
 ### Step 3. Determine the data accuracy
-1.	The raw dataset contains redundant columns and many data quality. So, we keep only acceptable data quality such as: A- excellent, B- very good, C- good, D- acceptable.
-2.	We drop redundant columns of the dataset as followings: DGUID, UOM_ID, SCALAR_FACTOR, SCALAR_ID, VECTOR, COORDINATE, STATUS, SYMBOL, UOM, TERMINATED, DECIMALS.
-3.	Next, we check that there isn’t any duplicate rows and null values.
-4.	The plotting different columns shows results as followings:
+  1.	The raw dataset contains redundant columns and many data quality. So, we keep only acceptable data quality such as: A- excellent, B- very good, C- good, D- acceptable.
+  2.	We drop redundant columns of the dataset as followings: DGUID, UOM_ID, SCALAR_FACTOR, SCALAR_ID, VECTOR, COORDINATE, STATUS, SYMBOL, UOM, TERMINATED, DECIMALS.
+  3.	Next, we check that there isn’t any duplicate rows and null values.
+  4.	The plotting different columns shows results as followings:
 
-screen 
+![image](https://user-images.githubusercontent.com/68247343/142800323-557949da-9a65-4fef-a479-cc98e2e726c5.png) 
 
-scree 3
+![image](https://user-images.githubusercontent.com/68247343/142800340-5edf238f-6f9f-4150-ac83-da64da94389f.png)
 
-5.	Lastly, we find out 2-10% of difference of missing data by quarters comparing blocks of selected data such as total vacancies for Canada / all occupation/ all type of job with filtered by Provinces/ only Broad NOC / Full-time, Part-time type of job.
+  5.	Lastly, we find out 2-10% of difference of missing data by quarters comparing blocks of selected data such as total vacancies for Canada / all occupation/ all type of job with filtered by Provinces/ only Broad NOC / Full-time, Part-time type of job.
 
-screen 4
+![image](https://user-images.githubusercontent.com/68247343/142800355-7a7d76e7-66c0-426d-b29c-aa0513cf833a.png)
