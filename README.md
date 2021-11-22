@@ -48,6 +48,8 @@ The team made use of a dedicated Slack channel, Zoom and various Google apps to 
 
 Please refer to the dedicated ReadME explaining the data exploration process.
 
+## Results
+
 ### Machine Learning
 
 Please refer to the dedicated ReadME explaining the machine learning models used for analyzing and predicting future vacancies.
