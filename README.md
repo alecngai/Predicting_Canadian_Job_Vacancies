@@ -42,11 +42,11 @@ The goal of this project is to make use of machine learning to predict and deter
 
 ## Communication Protocols
 
-The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday. It can be found here [Meeting Minutes](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Google_Drive_Clone_2021_11_06/Meeting%20Minutes).
+The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday. It can be found here [Meeting Minutes](https://drive.google.com/drive/u/0/folders/1DQeqdlZeQvmMsLN6V7zvOZ2vlEtHmIUq).
 
 ## Data Exploration and Cleaning
 
-Please refer to the dedicated ReadME explaining the data exploration process.
+Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Data_Exploration#readme) explaining the data exploration process.
 
 ## Results
 
