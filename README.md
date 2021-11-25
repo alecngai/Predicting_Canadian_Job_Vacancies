@@ -42,17 +42,17 @@ The goal of this project is to make use of machine learning to predict and deter
 
 ## Communication Protocols
 
-The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday. It can be found here [Meeting Minutes](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Google_Drive_Clone_2021_11_06/Meeting%20Minutes).
+The team made use of a dedicated Slack channel, Zoom and various Google apps to communicate, meeting every Tuesday, Thursday and Saturday. It can be found here [Meeting Minutes](https://drive.google.com/drive/u/0/folders/1DQeqdlZeQvmMsLN6V7zvOZ2vlEtHmIUq).
 
 ## Data Exploration and Cleaning
 
-Please refer to the dedicated ReadME explaining the data exploration process.
+Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Data_Exploration/README_EDA.md) explaining the data exploration process.
 
 ## Results
 
 ### Machine Learning
 
-Please refer to the dedicated ReadME explaining the machine learning models used for analyzing and predicting future vacancies.
+Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Time%20Series%20Machine%20Learning%20Model.md) explaining the timeSeries machine learning model, and, this [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/MLP_Alec.md) for Multi-Layer Perceptron regressor used for analyzing and predicting future vacancies.
 
 ### Database
 
