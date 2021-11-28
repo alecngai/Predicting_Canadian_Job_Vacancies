@@ -1,5 +1,5 @@
-# Time Series Machine Learning Model
-
+# Time Series SARIMAX Machine Learning Model
+SARIMAX is used on data sets that have seasonal cycles. The exploratory 
 ## Description of preliminary data preprocessing
 The folowing steps are performed as the nescessary preprocessing for the model:
 1. converting the REF_DATE column into a datetime object
