@@ -49,3 +49,26 @@ CREATE TABLE Canada_Vacancies (
 	Predicted_Vacancies int,
 	PRIMARY KEY (REF_DATE)
 );
+
+-- ALTER TABLE to add auto increment on ID
+CREATE SEQUENCE IF NOT EXISTS machinelearning_id_seq;
+
+SELECT SETVAL('machinelearning_id_seq', (
+  SELECT max(ID) FROM machinelearning)
+);
+
+ALTER TABLE machinelearning
+ALTER COLUMN ID
+SET DEFAULT nextval('machinelearning_id_seq'::regclass);
+
+ALTER SEQUENCE machinelearning_id_seq
+OWNED BY machinelearning.ID;
+
+-- checking table config 
+SELECT * 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'machinelearning'
+
+-- test insert into autoincrement
+INSERT INTO machinelearning2 (id, ref_date, geo, noc_code,noc_desc,job_char,total_vacancies,predicted_vacancies)
+VALUES (default, '2020-11-10', 'Ireland', '22','test','test','20','20');
