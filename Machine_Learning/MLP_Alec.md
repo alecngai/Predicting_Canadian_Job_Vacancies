@@ -119,3 +119,8 @@ We predicted from 2015 to 2020 Q2 which the data we have excluding covid, we als
 ![Future](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Future_Code.png)
 
 We predict from 2020 to 2015, we do it in a for loop with 20 iterations, for every loop since we are re-fitting the model we must re-intialize our model as well. For the first loop we skip since we want to start exactly after the previous current data prediction of 2020 Q1, for 2020 Q2 we skip creating a new input as it was already created outside the loop, this is because the formating for creating this input is not loopable, from then onwards we create and appened the new input and for every loop we re-scale the input as well. There is an empty dataframe where we concat the prediction output. Finally we clean the output and send it off to the database after we combine both predictions into one dataframe. 
+
+
+![Future](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/MLP_Output_Total.png)
+
+The orange line is MLP prediction and blue line is actual data, we can seen for the most part the trends are always alligned with actual data, and we can confirm our model is accuractly predicting the future with the given dataset input. 
