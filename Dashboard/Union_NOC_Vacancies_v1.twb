@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook original-version='18.1' source-build='2021.3.3 (20213.21.1018.0949)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='noc+ (Vacancies)' inline='true' name='federated.1u6rb4t0lyen7z12ds6rs046wf1y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='group3db.cueberfdee85.us-east-2.rds.amazonaws.com' name='postgres.0e700fo1dr6v1i110d80x0pc2wev'>
+            <connection authentication='username-password' class='postgres' dbname='Vacancies' odbc-native-protocol='' one-time-sql='' port='5432' server='group3db.cueberfdee85.us-east-2.rds.amazonaws.com' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='MLPmodel_output' table='[public].[MLPmodel_output]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='REF_DATE' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='noc' table='[public].[noc]' type='table' />
+          <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='vacancies' table='[public].[vacancies]' type='table' />
+          <relation all='true' connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' include-siblings='false' is-recursive='false' name='Union' path='' type='batch-union'>
+            <database-filter />
+            <table-filter />
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='REF_DATE' />
+            </columns>
+          </relation>
+          <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='MLPmodel_output' table='[public].[MLPmodel_output]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='REF_DATE' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[GEO (MLPmodel_output)]' value='[MLPmodel_output].[GEO]' />
+          <map key='[GEO]' value='[Union].[GEO]' />
+          <map key='[JOB_CHAR (MLPmodel_output)]' value='[MLPmodel_output].[JOB_CHAR]' />
+          <map key='[JOB_CHAR]' value='[Union].[JOB_CHAR]' />
+          <map key='[NOC (MLPmodel_output)]' value='[MLPmodel_output].[NOC]' />
+          <map key='[NOC]' value='[Union].[NOC]' />
+          <map key='[PREDICTED_VACANCIES (MLPmodel_output)]' value='[MLPmodel_output].[PREDICTED_VACANCIES]' />
+          <map key='[PREDICTED_VACANCIES]' value='[Union].[PREDICTED_VACANCIES]' />
+          <map key='[REF_DATE (MLPmodel_output)]' value='[MLPmodel_output].[REF_DATE]' />
+          <map key='[REF_DATE]' value='[Union].[REF_DATE]' />
+          <map key='[Table Name]' value='[Union].[Table Name]' />
+          <map key='[avg_wage]' value='[Union].[avg_wage]' />
+          <map key='[id]' value='[Union].[id]' />
+          <map key='[index (MLPmodel_output)]' value='[MLPmodel_output].[index]' />
+          <map key='[index]' value='[Union].[index]' />
+          <map key='[job_details (Union)]' value='[Union].[job_details]' />
+          <map key='[job_details]' value='[vacancies].[job_details]' />
+          <map key='[location (Union)]' value='[Union].[location]' />
+          <map key='[location]' value='[vacancies].[location]' />
+          <map key='[noc_code (Union)]' value='[Union].[noc_code]' />
+          <map key='[noc_code (vacancies)]' value='[vacancies].[noc_code]' />
+          <map key='[noc_code]' value='[noc].[noc_code]' />
+          <map key='[noc_desc (Union)]' value='[Union].[noc_desc]' />
+          <map key='[noc_desc]' value='[noc].[noc_desc]' />
+          <map key='[quarter (Union)]' value='[Union].[quarter]' />
+          <map key='[quarter]' value='[vacancies].[quarter]' />
+          <map key='[ref_date]' value='[vacancies].[ref_date]' />
+          <map key='[total_vacancies (Union)]' value='[Union].[total_vacancies]' />
+          <map key='[total_vacancies]' value='[vacancies].[total_vacancies]' />
+          <map key='[vacancy_id (Union)]' value='[Union].[vacancy_id]' />
+          <map key='[vacancy_id]' value='[vacancies].[vacancy_id]' />
+          <map key='[wage_id]' value='[Union].[wage_id]' />
+          <map key='[year (Union)]' value='[Union].[year]' />
+          <map key='[year]' value='[vacancies].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>noc_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[noc_code]</local-name>
+            <parent-name>[noc]</parent-name>
+            <remote-alias>noc_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[noc_42425583CA9443F8987766211F068919]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noc_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[noc_desc]</local-name>
+            <parent-name>[noc]</parent-name>
+            <remote-alias>noc_desc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[noc_42425583CA9443F8987766211F068919]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vacancy_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[vacancy_id]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>vacancy_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ref_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ref_date]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>ref_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[quarter]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>quarter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noc_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[noc_code (vacancies)]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>noc_code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_details</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[job_details]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>job_details</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vacancies</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vacancies]</local-name>
+            <parent-name>[vacancies]</parent-name>
+            <remote-alias>total_vacancies</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REF_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[REF_DATE]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>REF_DATE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEO]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>GEO</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NOC]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>NOC</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JOB_CHAR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JOB_CHAR]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>JOB_CHAR</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREDICTED_VACANCIES</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PREDICTED_VACANCIES]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>PREDICTED_VACANCIES</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vacancies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_vacancies (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>total_vacancies</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noc_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[noc_code (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>noc_code</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noc_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[noc_desc (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>noc_desc</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wage_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wage_id]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>wage_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quarter (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>quarter</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_wage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_wage]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>avg_wage</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vacancy_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vacancy_id (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>vacancy_id</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_details (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>job_details</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RCA' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_009A892579D54B80BC155B5E913C2D64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REF_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[REF_DATE (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>REF_DATE</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GEO (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>GEO</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NOC (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>NOC</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JOB_CHAR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[JOB_CHAR (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>JOB_CHAR</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREDICTED_VACANCIES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PREDICTED_VACANCIES (MLPmodel_output)]</local-name>
+            <parent-name>[MLPmodel_output]</parent-name>
+            <remote-alias>PREDICTED_VACANCIES</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GEO (MLPmodel output)' datatype='string' name='[GEO (MLPmodel_output)]' role='dimension' type='nominal' />
+      <column caption='JOB CHAR (MLPmodel output)' datatype='string' name='[JOB_CHAR (MLPmodel_output)]' role='dimension' type='nominal' />
+      <column caption='NOC (MLPmodel output)' datatype='string' name='[NOC (MLPmodel_output)]' role='dimension' type='nominal' />
+      <column caption='PREDICTED VACANCIES (MLPmodel output)' datatype='integer' name='[PREDICTED_VACANCIES (MLPmodel_output)]' role='measure' type='quantitative' />
+      <column datatype='integer' datatype-customized='true' name='[PREDICTED_VACANCIES]' role='measure' type='quantitative' />
+      <column caption='REF DATE (MLPmodel output)' datatype='date' datatype-customized='true' name='[REF_DATE (MLPmodel_output)]' role='dimension' type='ordinal' />
+      <column datatype='date' datatype-customized='true' name='[REF_DATE]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='MLPmodel_output' datatype='table' name='[__tableau_internal_object_id__].[MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_009A892579D54B80BC155B5E913C2D64]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='noc' datatype='table' name='[__tableau_internal_object_id__].[noc_42425583CA9443F8987766211F068919]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='vacancies' datatype='table' name='[__tableau_internal_object_id__].[vacancies_3C7196DDF3E54DA7BDA7C731C82EC036]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='index (MLPmodel output)' datatype='integer' name='[index (MLPmodel_output)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[index]' role='dimension' type='ordinal' />
+      <column caption='Job Details' datatype='string' name='[job_details]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Noc Code (Vacancies)' datatype='string' name='[noc_code (vacancies)]' role='dimension' type='nominal' />
+      <column caption='Noc Code' datatype='string' name='[noc_code]' role='dimension' type='nominal' />
+      <column caption='Noc Desc' datatype='string' name='[noc_desc]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[quarter (Union)]' role='dimension' type='ordinal' />
+      <column caption='Quarter' datatype='integer' name='[quarter]' role='dimension' type='quantitative' />
+      <column caption='Ref Date' datatype='date' name='[ref_date]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' datatype='integer' datatype-customized='true' name='[total_vacancies (Union)]' role='measure' type='quantitative' />
+      <column caption='Total Vacancies' datatype='real' name='[total_vacancies]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[vacancy_id (Union)]' role='dimension' type='ordinal' />
+      <column caption='Vacancy Id' datatype='integer' name='[vacancy_id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[wage_id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[year (Union)]' role='dimension' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[total_vacancies (Union)]' derivation='CountD' name='[ctd:total_vacancies (Union):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PREDICTED_VACANCIES (MLPmodel_output)]' derivation='Sum' name='[sum:PREDICTED_VACANCIES (MLPmodel_output):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PREDICTED_VACANCIES]' derivation='Sum' name='[sum:PREDICTED_VACANCIES:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_vacancies (Union)]' derivation='Sum' name='[sum:total_vacancies (Union):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_vacancies]' derivation='Sum' name='[sum:total_vacancies:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='5000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:PREDICTED_VACANCIES:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:PREDICTED_VACANCIES (MLPmodel_output):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[ctd:total_vacancies (Union):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:total_vacancies (Union):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:total_vacancies:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='MLPmodel_output' id='MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB'>
+            <properties context=''>
+              <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='MLPmodel_output' table='[public].[MLPmodel_output]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='REF_DATE' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Union' id='_009A892579D54B80BC155B5E913C2D64'>
+            <properties context=''>
+              <relation all='true' connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' include-siblings='false' is-recursive='false' name='Union' path='' type='batch-union'>
+                <database-filter />
+                <table-filter />
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='REF_DATE' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='noc' id='noc_42425583CA9443F8987766211F068919'>
+            <properties context=''>
+              <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='noc' table='[public].[noc]' type='table' />
+            </properties>
+          </object>
+          <object caption='vacancies' id='vacancies_3C7196DDF3E54DA7BDA7C731C82EC036'>
+            <properties context=''>
+              <relation connection='postgres.0e700fo1dr6v1i110d80x0pc2wev' name='vacancies' table='[public].[vacancies]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[REF_DATE]' />
+                <expression op='[REF_DATE (MLPmodel_output)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[location (Union)]' />
+                <expression op='[GEO (MLPmodel_output)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[noc_desc (Union)]' />
+                <expression op='[NOC (MLPmodel_output)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[job_details (Union)]' />
+                <expression op='[JOB_CHAR (MLPmodel_output)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='_009A892579D54B80BC155B5E913C2D64' />
+            <second-end-point object-id='MLPmodel_output_8C12D42C9EC84CDA8E1A6A04D6D9B1EB' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[ref_date]' />
+                <expression op='[REF_DATE]' />
+              </expression>
+              <expression op='='>
+                <expression op='[location]' />
+                <expression op='[location (Union)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[noc_code (vacancies)]' />
+                <expression op='[noc_code (Union)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[job_details]' />
+                <expression op='[job_details (Union)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='vacancies_3C7196DDF3E54DA7BDA7C731C82EC036' />
+            <second-end-point object-id='_009A892579D54B80BC155B5E913C2D64' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[noc_code]' />
+              <expression op='[noc_code (vacancies)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='noc_42425583CA9443F8987766211F068919' unique-key='true' />
+            <second-end-point object-id='vacancies_3C7196DDF3E54DA7BDA7C731C82EC036' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='noc+ (Vacancies)' name='federated.1u6rb4t0lyen7z12ds6rs046wf1y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u6rb4t0lyen7z12ds6rs046wf1y'>
+            <column caption='PREDICTED VACANCIES (MLPmodel output)' datatype='integer' name='[PREDICTED_VACANCIES (MLPmodel_output)]' role='measure' type='quantitative' />
+            <column-instance column='[PREDICTED_VACANCIES (MLPmodel_output)]' derivation='Sum' name='[sum:PREDICTED_VACANCIES (MLPmodel_output):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_vacancies]' derivation='Sum' name='[sum:total_vacancies:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Vacancies' datatype='real' name='[total_vacancies]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:PREDICTED_VACANCIES (MLPmodel_output):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[sum:total_vacancies:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{09463140-655A-4646-B5C8-17F391F1AA6F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='292'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[:Measure Names]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[none:GEO:nk]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[none:JOB_CHAR:nk]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[none:job_details (Union):nk]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[none:location (Union):nk]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[none:noc_code (Union):nk]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[yr:REF_DATE (MLPmodel_output):ok]</field>
+            <field>[federated.1u6rb4t0lyen7z12ds6rs046wf1y].[yr:REF_DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1086FC83-B760-45ED-81A7-6AA67EF874D0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='48' name='Sheet 1' width='128'>
+      iVBORw0KGgoAAAANSUhEUgAAAIAAAAAwCAYAAADZ9HK+AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAArklEQVR4nO3csQ3DMAwAQcvIfmkzSwbwLG4zobKEAgX4uwEIFg+WHHPOeZB17l6AvQQQ
+      J4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA
+      4h67F/gHz/e9dN7nei2d90suQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHEC
+      iBNAnADihmfRbS5AnADivq5nC1k3+f4BAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
