@@ -16,7 +16,9 @@ this will allow the ML model to see the trend in quarters within the year more a
 
 - Creation of previous quarter vacancy (PREVIOUS_VACANCY (Int))
 
-![prevVacancies](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Prev_Vacancies.png)
+![prevVacancies](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Prev_Vacancies_FlowChart.png)
+
+![prevVacancies_chart](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Prev_Vacancies.png)
 
 This is an important column for the MLP Regressor model so it can more accurately predict the next quarters vacancy amount. 
 
@@ -101,3 +103,24 @@ The limitation of MLP model predicts negative job vacancies which isn't possible
 Benefits of MLP, it has the highest accuracy and prediction and all the trends for every single year, quarter, geo, noc and job_char are the same, so we can conclude our model is accurate, you can see from the chart below it can accuractly predict the values where the charts look very similar. 
 
 ![TREND](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/TREND_TEST.png)
+
+## Final Prediction 
+
+Final final output we trained the model on 100% of the data, we did two partitions. 
+
+- 1st Current data prediction 2015 to 2020
+
+![Current](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Current_Code.png)
+
+We predicted from 2015 to 2020 Q2 which the data we have excluding covid, we also trained on the same data, this is useful for visualization, as we can see the complete line from beginning of data to end to compare the two. We also re-tested our accuracy to make sure our model is working correclty, we export to CSV just to quickly test and see if our outputs are predicting to our expectations. 
+
+-2nd Future data prediction
+
+![Future](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/Future_Code.png)
+
+We predict from 2020 to 2015, we do it in a for loop with 20 iterations, for every loop since we are re-fitting the model we must re-intialize our model as well. For the first loop we skip since we want to start exactly after the previous current data prediction of 2020 Q1, for 2020 Q2 we skip creating a new input as it was already created outside the loop, this is because the formating for creating this input is not loopable, from then onwards we create and appened the new input and for every loop we re-scale the input as well. There is an empty dataframe where we concat the prediction output. Finally we clean the output and send it off to the database after we combine both predictions into one dataframe. 
+
+
+![Future](https://raw.githubusercontent.com/alecngai/Data_Capstone_2021_Group_3/main/Machine_Learning/Resources/MLP/MLP_Output_Total.png)
+
+The orange line is MLP prediction and blue line is actual data, we can seen for the most part the trends are always alligned with actual data, and we can confirm our model is accuractly predicting the future with the given dataset input. 
