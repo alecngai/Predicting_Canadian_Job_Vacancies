@@ -7,7 +7,7 @@ The database integrates into the below data flow:
 <img src = 'Resources/DataFlowDiagram.jpg' />
 
 Entity Relationship Diagram (ERD) was created as below to map out the design of the database. 
-![ERD_DB](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/3fcd4bc5225c7b78316b5c9a61538b421cede14d/Database/DB_ERD.png)
+![ERD_DB](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/39b125bc3ced02fc1495ac70728caf9a1fcdc949/Database/DB_ERD.png)
 
 To create “Predicting Labour Vacancies in Various Canadian Sectors” the team leveraged PostGresSQL to host and interact with the database. 
 
