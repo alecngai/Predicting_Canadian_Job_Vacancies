@@ -52,7 +52,7 @@ Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone
 
 ### Machine Learning
 
-Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/Time%20Series%20Machine%20Learning%20Model.md) explaining the timeSeries machine learning model, and, this [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/MLP_Alec.md) for Multi-Layer Perceptron regressor used for analyzing and predicting future vacancies.
+Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Machine_Learning/README.md) explaining the timeSeries machine learning model, and, for Multi-Layer Perceptron regressor used for analyzing and predicting future vacancies.
 
 ### Database
 
@@ -60,6 +60,6 @@ The team made use of AWS' Relational Database Service to host the database used 
 
 ### Dashboard
 
-The team decided on making use of Tableau as a visualization tool. Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Dashboard#readme) proving images of the Tableau storyboard
+The team decided on making use of Tableau as a visualization tool. Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Dashboard/README.md) proving images of the Tableau storyboard
 
 
