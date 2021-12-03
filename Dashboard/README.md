@@ -6,11 +6,10 @@ To view the visualization using Tableau, please refer to the [Tableau_Public_ver
 The goal is to make use of Tableau's dashboard feature to create heatmaps that would perfectly show information such as vacancies by province, vacancies by industry and other machine learning outputs. All the dashboards used for the Tableau story have an interactive element. For example, clicking on a province would show details on vacancies relating to that province alone.
 
 **_Tableau Storyboard_**
-![image](https://user-images.githubusercontent.com/86085601/143788901-71fe4e9e-2789-4df9-b2b7-10ecb1272d9d.png)
+![image](https://user-images.githubusercontent.com/68247343/144644071-b477c2fc-49eb-47f6-8666-7b43bafc570a.png)
 
-![image](https://user-images.githubusercontent.com/86085601/143788917-63d8f187-8131-457f-9bae-d4a52ab8780c.png)
+![image](https://user-images.githubusercontent.com/68247343/144644133-75bf1b7f-0bc6-4b9a-b8af-0a2dbefe7034.png)
 
-![image](https://user-images.githubusercontent.com/86085601/143788931-a83d4718-6e0b-4eef-bf9d-ffa92eabd2da.png)
+![image](https://user-images.githubusercontent.com/68247343/144644170-3599c7e1-e4d9-4c08-91a9-e605d2bfef93.png)
 
-![image](https://user-images.githubusercontent.com/86085601/143788945-c076720e-fa41-49ae-8811-7141a3c50288.png)
-
+![image](https://user-images.githubusercontent.com/68247343/144644222-5ae8e98d-77f0-4158-b72d-dd9e8644c5c6.png)
