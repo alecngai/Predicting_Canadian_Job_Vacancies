@@ -2,14 +2,15 @@
 
 All content on this page were authored by [Alec Ngai](https://github.com/alecngai), [Esther Utomakili](https://github.com/EstherUto), [Jerry McGranaghan](https://github.com/JerryMcG), [Wisam Ramadan](https://github.com/WisamRamadan) and [Olesya Irkhina](https://github.com/itekkie).
 
-To view the overview of the project, please refer to the [Google Slides](https://docs.google.com/presentation/d/13DwRuTAOs9LMtDzRW2bk1DPOZpiPyLyL5yLpyy_frok/edit?usp=sharing) documents authored by the team.
+To view the overview of the project, please refer to the [Google Slides](https://docs.google.com/presentation/d/1rpN_wBFnfzjYkiGqv2N_-4yDQWGsUVga/edit#slide=id.p1) documents authored by the team.
 
 ## Table of Contents
 
 - [Overview of Project](#overview-of-project)
   * [Project Topic](#project-topic)
-  * [Data Source](#data-source)
   * [Project Goals](#project-goals)
+  * [Data Source](#data-source)
+  
 - [Communication Protocols](#communication-protocols)
 - [Data Exploration and Cleaning](#data-exploration-and-cleaning)
 - [Results](#results)
@@ -25,6 +26,11 @@ The chosen topic for this project is "Understanding and Predicting Labour Vacanc
 
 This topic was selected to understand the Canadian labout market and predict how the job market would look like in the near future. It is important to know how the labour market have changed over the past years and how it will look like in the upcoimg years. Understanding the labour market and looking at potential vacancies could go a long way in avoiding situations such as economic collapse and could also potentially assist with education planning.
 
+### Project Goals
+
+* Predict future potential job vacancies in Canada
+* Understand underlying patterns in Canada’s job market
+
 ### Data Source
 
 All data used for the project was collected from the official Government of Canada website. The starting dataset was the [Job vacancies, proportion of job vacancies and average offered hourly wage by selected characteristics, quarterly, unadjusted for seasonality - Dataset](https://open.canada.ca/data/en/dataset/67f90ff0-12ea-429a-99a6-7b41c73863a0/resource/2cfa6a73-0b66-4b6e-a07b-7285f0ea774c) which contains number of job vacancies for various industries, categorized by National Occupational Classification (NOC) codes, every month from the first quarter of 2015 to the second quarter of 2021.
@@ -35,12 +41,6 @@ The original data set contains standardized column information, however, for the
 - National Occupational Classification (NOC) 
 - Vacancy Characteristics 
 - Statistics describing job vacancies, proportion of job vacancies and average wage
-
-### Project Goals
-
-* Predict future potential job vacancies in Canada
-* Understand underlying patterns in Canada’s job market
-
 
 ## Communication Protocols
 
