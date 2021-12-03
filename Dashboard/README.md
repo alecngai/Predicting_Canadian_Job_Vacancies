@@ -1,6 +1,9 @@
 # Dashboard
 
-The team decided on making use of Tableau as a visualization tool. The goal is to make use of Tableau's dashboard feature to create heatmaps that would perfectly show information such as vacancies by province, vacancies by industry and other machine learning outputs. All the dashboards used for the Tableau story have an interactive element. For example, clicking on a province would show details on vacancies relating to that province alone.
+The team decided on making use of Tableau as a visualization tool. 
+To view the visualization using Tableau, please refer to the [Tableau_Public_version](https://public.tableau.com/app/profile/olesya.irkhina/viz/Final_Dashboard_3_public/1_Actuals?publish=yes) document authored by the team.
+
+The goal is to make use of Tableau's dashboard feature to create heatmaps that would perfectly show information such as vacancies by province, vacancies by industry and other machine learning outputs. All the dashboards used for the Tableau story have an interactive element. For example, clicking on a province would show details on vacancies relating to that province alone.
 
 **_Tableau Storyboard_**
 ![image](https://user-images.githubusercontent.com/86085601/143788901-71fe4e9e-2789-4df9-b2b7-10ecb1272d9d.png)
