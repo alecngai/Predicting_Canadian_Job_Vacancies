@@ -23,7 +23,7 @@ To view the overview of the project, please refer to the [Google Slides](https:/
 
 The chosen topic for this project is "Understanding and Predicting Labour Vacancies in Various Canadian Sectors".
 
-This topic was selected to understand the Canadian labout market and predict how the job market would look like in the near future. It is important to know how the labour market hase been affected by COVID-19 and how it will look like post-COVID. Understanding the labour market and looking at potential vacancies could go a long way in avoiding situations such as economic collapse and could also potentially assist with education planning.
+This topic was selected to understand the Canadian labout market and predict how the job market would look like in the near future. It is important to know how the labour market have changed over the past years and how it will look like in the upcoimg years. Understanding the labour market and looking at potential vacancies could go a long way in avoiding situations such as economic collapse and could also potentially assist with education planning.
 
 ### Data Source
 
@@ -38,7 +38,9 @@ The original data set contains standardized column information, however, for the
 
 ### Project Goals
 
-The goal of this project is to make use of machine learning to predict and determine the amount of job vacancies in current quarter based on previous trends.
+* Predict future potential job vacancies in Canada
+* Understand underlying patterns in Canada’s job market
+
 
 ## Communication Protocols
 
