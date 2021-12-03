@@ -48,7 +48,7 @@ The team made use of a dedicated Slack channel, Zoom and various Google apps to 
 
 ## Data Exploration and Cleaning
 
-Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Data_Exploration/README_EDA.md) explaining the data exploration process.
+Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Data_Exploration/README.md) explaining the data exploration process.
 
 ## Results
 
