@@ -60,7 +60,7 @@ Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone
 
 The team made use of AWS' Relational Database Service to host the database used for the project. Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/tree/main/Database#readme) detailing all processes involving the database
 
-### Dashboard
+### [Dashboard](https://public.tableau.com/app/profile/olesya.irkhina/viz/Final_Dashboard_4_public/1_Actuals?publish=yes)
 
 The team decided on making use of Tableau as a visualization tool. Please refer to the dedicated [ReadME](https://github.com/alecngai/Data_Capstone_2021_Group_3/blob/main/Dashboard/README.md) proving images of the Tableau storyboard
 
